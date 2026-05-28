@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+prompt.txt
+.DS_Store
+Thumbs.db

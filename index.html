@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio de Hector Damas, desarrollador web enfocado en experiencias digitales con impacto comercial."
+    />
+    <title>Hector Damas | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">HD</a>
+      <nav aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn-outline btn-with-icon" href="https://github.com/hectordamas" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Héctor Damas">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        GitHub
+      </a>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Desarrollador Web | Caracas, Venezuela</p>
+          <h1>Construyo productos digitales que convierten visitas en resultados.</h1>
+          <p class="lead">
+            Soy Héctor Damas. Diseño y desarrollo experiencias web enfocadas en claridad,
+            velocidad y negocio. He trabajado en e-commerce, sitios corporativos y
+            productos digitales para distintos mercados.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-with-icon" href="#proyectos">
+              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              Ver proyectos
+            </a>
+            <a class="btn btn-ghost btn-with-icon" href="https://www.linkedin.com/in/hectordamas/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Héctor Damas">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </div>
+          <ul class="quick-facts" aria-label="Datos destacados">
+            <li><strong>19+</strong> repositorios públicos</li>
+            <li><strong>402</strong> contribuciones en el último año</li>
+            <li><strong>3</strong> verticales principales: retail, educación y utilidades</li>
+          </ul>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="images/profile.jpeg" alt="Foto de perfil de Héctor Damas" width="520" height="520" loading="eager" />
+          <figcaption>Héctor Damas</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="proyectos">
+        <div class="section-head">
+          <p class="eyebrow">Trabajo seleccionado</p>
+          <h2>Proyectos que resolvieron problemas reales</h2>
+        </div>
+
+        <div class="project-filters" role="group" aria-label="Filtrar proyectos">
+          <button class="chip is-active" data-filter="todos" type="button"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Todos</button>
+          <button class="chip" data-filter="ecommerce" type="button"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> E-commerce</button>
+          <button class="chip" data-filter="educacion" type="button"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Educación</button>
+          <button class="chip" data-filter="producto" type="button"><i class="fa-solid fa-cubes" aria-hidden="true"></i> Producto digital</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="ecommerce">
+            <h3 class="title-with-icon"><span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>Area Electric</h3>
+            <p>
+              Plataforma de venta para productos eléctricos y de iluminación con catálogo amplio,
+              integración de contacto comercial y flujos orientados a conversión.
+            </p>
+            <ul>
+              <li>Catálogo con +500 productos</li>
+              <li>CTA estratégicos (catálogo, WhatsApp, marketplace)</li>
+              <li>Arquitectura orientada a compra rápida</li>
+            </ul>
+            <a href="https://areaelectric.com.ve/" target="_blank" rel="noopener noreferrer">Visitar proyecto</a>
+          </article>
+
+          <article class="project-card" data-category="ecommerce">
+            <h3 class="title-with-icon"><span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></span>Electrical Marketplace</h3>
+            <p>
+              E-commerce enfocado en soluciones eléctricas y de iluminación con estructura de
+              categorías, best sellers y recursos de soporte comercial.
+            </p>
+            <ul>
+              <li>Enfoque en confianza y prueba social</li>
+              <li>Presentación clara de líneas de producto</li>
+              <li>Contenido de apoyo para equipos de venta</li>
+            </ul>
+            <a href="https://www.electricalmarketplace.com/" target="_blank" rel="noopener noreferrer">Visitar proyecto</a>
+          </article>
+
+          <article class="project-card" data-category="educacion">
+            <h3 class="title-with-icon"><span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-children"></i></span>Little Brands Inc</h3>
+            <p>
+              Sitio para programas deportivos de primera infancia con foco en comunicación
+              emocional, información clara para padres y conversión por contacto.
+            </p>
+            <ul>
+              <li>Narrativa de marca con enfoque familiar</li>
+              <li>Jerarquía de información por programas</li>
+              <li>Flujos de contacto y captación de interesados</li>
+            </ul>
+            <a href="https://littlebrandsinc.com/" target="_blank" rel="noopener noreferrer">Visitar proyecto</a>
+          </article>
+
+          <article class="project-card" data-category="producto">
+            <h3 class="title-with-icon"><span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></span>OTC Scanner</h3>
+            <p>
+              Producto digital orientado a análisis y lectura de oportunidades en mercados OTC,
+              con prioridad en velocidad visual y toma de decisiones.
+            </p>
+            <ul>
+              <li>Interfaz enfocada en lectura rápida</li>
+              <li>Estructura modular para evolución continua</li>
+              <li>Experiencia centrada en utilidad</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="producto">
+            <h3 class="title-with-icon"><span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-map-location-dot"></i></span>CiudadGPS</h3>
+            <p>
+              CiudadGPS, desarrollada por Producciones Plus C.A., es una aplicación para explorar
+              y descubrir los tesoros de Venezuela desde la ubicación del celular.
+            </p>
+            <ul>
+              <li>Mapa interactivo con comercios, restaurantes, turismo y eventos culturales.</li>
+              <li>Perfil detallado por lugar con reseñas, fotos, calificaciones y recomendaciones.</li>
+              <li>Conexión directa con catálogos enlazados a WhatsApp para contacto inmediato.</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="producto">
+            <h3 class="title-with-icon"><span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-faucet-drip"></i></span>PlusControl</h3>
+            <p>
+              Plataforma para gestión inteligente de suministro de agua, enfocada en monitoreo,
+              automatización y eficiencia operativa.
+            </p>
+            <ul>
+              <li>Monitoreo en tiempo real de nivel de agua, presión y consumo.</li>
+              <li>Automatización precisa de horarios de suministro según necesidades específicas.</li>
+              <li>Ahorro de costos y recursos mediante optimización y reducción de desperdicios.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experiencia">
+        <div class="section-head">
+          <p class="eyebrow">Experiencia profesional</p>
+          <h2>Experiencia laboral destacada</h2>
+          <p class="lead">Trayectoria profesional tomada de LinkedIn y orientada a resultados en producto, tecnología y ejecución.</p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-crown"></i></span>
+              CiudadGPS
+            </h3>
+            <p class="experience-role">Chief Technology Officer (CTO) · Ene 2023 - Jul 2024</p>
+            <p>Lideré la estrategia técnica del MVP web y móvil, junto con la formación del equipo inicial.</p>
+            <ul class="feature-list">
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Selección de tecnologías clave para escalabilidad.</span></li>
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Diseño de campañas de marketing digital para adquisición inicial.</span></li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-building"></i></span>
+              Grupo Empresarial Frelat
+            </h3>
+            <p class="experience-role">Full Stack Developer · Jul 2022 - Ene 2023</p>
+            <p>Desarrollo de software de gestión empresarial para operaciones internas y control de procesos.</p>
+            <ul class="feature-list">
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Implementación de herramientas de inventario.</span></li>
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Módulos de seguimiento para proyectos y productividad.</span></li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+              Comercializadora GrupoPlus+
+            </h3>
+            <p class="experience-role">Full Stack Developer · Mar 2019 - Jul 2022</p>
+            <p>Mantenimiento y evolución de ecosistema digital: web, app móvil y sistema administrativo.</p>
+            <ul class="feature-list">
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Soporte técnico continuo y mejora de rendimiento.</span></li>
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Diseño de landing pages comerciales orientadas a conversión.</span></li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-truck-fast"></i></span>
+              Servicios Logísticos Trex
+            </h3>
+            <p class="experience-role">Full Stack Developer · Sept 2020 - Dic 2020</p>
+            <p>Desarrollo de solución logística para control y trazabilidad de transporte especializado.</p>
+            <ul class="feature-list">
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Sistema de control de transporte para maquinaria electoral.</span></li>
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Visibilidad operativa para seguimiento de rutas y estados.</span></li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-store"></i></span>
+              Imagen361°
+            </h3>
+            <p class="experience-role">Full Stack Developer · Sept 2018 - Mar 2019</p>
+            <p>Desarrollo de tiendas online y páginas personalizadas para marcas y clientes de distintos rubros.</p>
+            <ul class="feature-list">
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Implementación de soluciones e-commerce funcionales.</span></li>
+              <li><span class="feature-icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span><span>Landing pages optimizadas para campañas comerciales.</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="sobre-mi">
+        <div class="section-head">
+          <p class="eyebrow">Perfil profesional</p>
+          <h2>Mi enfoque: negocio, UX y ejecución técnica</h2>
+          <p class="lead profile-lead">
+            Convierto objetivos de negocio en experiencias claras, medibles y listas para escalar.
+          </p>
+        </div>
+
+        <div class="columns profile-grid">
+          <article class="profile-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></span>
+              Cómo trabajo
+            </h3>
+            <p>
+              Empiezo por objetivos de negocio y usuarios. Luego traduzco eso a una arquitectura
+              clara, interfaces que guían acciones y una implementación técnica mantenible.
+            </p>
+          </article>
+          <article class="profile-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+              Fortalezas
+            </h3>
+            <p>
+              Diseño de experiencia web, implementación frontend, integración con flujos
+              comerciales y mejora continua basada en resultados.
+            </p>
+          </article>
+          <article class="profile-card">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>
+              Stack habitual
+            </h3>
+            <p>
+              JavaScript, PHP, HTML/CSS y herramientas modernas para construir productos rápidos,
+              escalables y centrados en conversión.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="certificaciones">
+        <div class="section-head">
+          <p class="eyebrow">Formación continua</p>
+          <h2>Certificaciones profesionales</h2>
+        </div>
+
+        <p class="lead cert-lead">
+          Estas certificaciones respaldan mi evolución como desarrollador full stack: desde fundamentos web y frontend moderno, hasta backend, bases de datos, marketing digital y habilidades complementarias para construir productos con impacto.
+        </p>
+
+        <div class="cert-summary" aria-label="Resumen de certificaciones">
+          <div class="cert-pill">
+            <strong class="count-value" data-count="31">0</strong>
+            <span>certificaciones</span>
+          </div>
+          <div class="cert-pill">
+            <strong class="count-value" data-count="2">0</strong>
+            <span>plataformas</span>
+          </div>
+          <div class="cert-pill">
+            <strong class="count-value" data-count="6">0</strong>
+            <span>anios de aprendizaje continuo</span>
+          </div>
+        </div>
+
+        <div class="cert-filters" role="group" aria-label="Filtrar certificaciones">
+          <button class="cert-chip is-active" data-cert-filter="todos" type="button"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Todas</button>
+          <button class="cert-chip" data-cert-filter="google" type="button"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Google Actívate</button>
+          <button class="cert-chip" data-cert-filter="backend" type="button"><i class="fa-solid fa-database" aria-hidden="true"></i> Backend y Datos</button>
+          <button class="cert-chip" data-cert-filter="frontend" type="button"><i class="fa-solid fa-code" aria-hidden="true"></i> Frontend y Web</button>
+          <button class="cert-chip" data-cert-filter="extra" type="button"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Complementarias</button>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card" data-cert-group="google">
+            <h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Google Actívate</h3>
+            <p class="cert-meta">4 certificaciones</p>
+            <ul class="trophy-list">
+              <li><a href="Certificados/certificado-desarrollo-web.pdf" target="_blank" rel="noopener noreferrer">Curso de Introducción al Desarrollo Web</a></li>
+              <li><a href="Certificados/certificado-marketing-digital.pdf" target="_blank" rel="noopener noreferrer">Curso Básico de Marketing Digital</a></li>
+              <li><a href="Certificados/Curso%20de%20Productividad%20Personal%20en%20la%20Era%20Digital.pdf" target="_blank" rel="noopener noreferrer">Curso de Productividad en la Era Digital</a></li>
+              <li><a href="Certificados/Curso%20E-Commerce.pdf" target="_blank" rel="noopener noreferrer">Curso de Comercio Electrónico</a></li>
+            </ul>
+          </article>
+
+          <article class="cert-card" data-cert-group="backend">
+            <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Platzi - Backend y Datos</h3>
+            <p class="cert-meta">8 certificaciones</p>
+            <ul class="trophy-list">
+              <li><a href="Certificados/diploma-backend-ruby.pdf" target="_blank" rel="noopener noreferrer">Carrera de Backend con Ruby</a></li>
+              <li><a href="Certificados/diploma-backend.pdf" target="_blank" rel="noopener noreferrer">Carrera de Backend Profesional</a></li>
+              <li><a href="Certificados/diploma-base-de-datos.pdf" target="_blank" rel="noopener noreferrer">Carrera de Bases de Datos</a></li>
+              <li><a href="Certificados/diploma-curso-php-laravel-2017.pdf" target="_blank" rel="noopener noreferrer">Curso de PHP con Laravel</a></li>
+              <li><a href="Certificados/diploma-desarrollo-php.pdf" target="_blank" rel="noopener noreferrer">Carrera de Desarrollo con PHP</a></li>
+              <li><a href="Certificados/diploma-php-2017.pdf" target="_blank" rel="noopener noreferrer">Curso de PHP</a></li>
+              <li><a href="Certificados/diploma-sql-mysql-2016.pdf" target="_blank" rel="noopener noreferrer">Curso de SQL y MySQL</a></li>
+              <li><a href="Certificados/diploma-postgresql-2017.pdf" target="_blank" rel="noopener noreferrer">Curso de Postgresql</a></li>
+            </ul>
+          </article>
+
+          <article class="cert-card" data-cert-group="frontend">
+            <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Platzi - Frontend y Web</h3>
+            <p class="cert-meta">9 certificaciones</p>
+            <ul class="trophy-list">
+              <li><a href="Certificados/diploma-html5-css3-2016.pdf" target="_blank" rel="noopener noreferrer">Curso de Desarrollo Web</a></li>
+              <li><a href="Certificados/diploma-css-grid-layout.pdf" target="_blank" rel="noopener noreferrer">Curso de CSS Grid Layout</a></li>
+              <li><a href="Certificados/diploma-fundamentos-javascript-2017.pdf" target="_blank" rel="noopener noreferrer">Curso de Fundamentos de JavaScript</a></li>
+              <li><a href="Certificados/diploma-javascript-jquery-2015.pdf" target="_blank" rel="noopener noreferrer">Curso de JQuery</a></li>
+              <li><a href="Certificados/diploma-desarrollo-react.pdf" target="_blank" rel="noopener noreferrer">Carrera de Desarrollo con React</a></li>
+              <li><a href="Certificados/diploma-react.pdf" target="_blank" rel="noopener noreferrer">Curso de React</a></li>
+              <li><a href="Certificados/diploma-redux.pdf" target="_blank" rel="noopener noreferrer">Curso de Redux</a></li>
+              <li><a href="Certificados/diploma-programacion-basica.pdf" target="_blank" rel="noopener noreferrer">Curso de Programación Básica</a></li>
+              <li><a href="Certificados/diploma-git-github.pdf" target="_blank" rel="noopener noreferrer">Curso de Git y GitHub</a></li>
+            </ul>
+          </article>
+
+          <article class="cert-card" data-cert-group="extra">
+            <h3><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Platzi - Complementarias</h3>
+            <p class="cert-meta">10 certificaciones</p>
+            <ul class="trophy-list">
+              <li><a href="Certificados/diploma-desarrollo-wordpress.pdf" target="_blank" rel="noopener noreferrer">Carrera de Desarrollo con WordPress</a></li>
+              <li><a href="Certificados/diploma-wordpress.pdf" target="_blank" rel="noopener noreferrer">Curso de WordPress</a></li>
+              <li><a href="Certificados/diploma-wordpress2016.pdf" target="_blank" rel="noopener noreferrer">Curso de WordPress (2016)</a></li>
+              <li><a href="Certificados/diploma-ruby-2017.pdf" target="_blank" rel="noopener noreferrer">Curso de Ruby</a></li>
+              <li><a href="Certificados/diploma-ruby-basico-2015.pdf" target="_blank" rel="noopener noreferrer">Curso de Ruby Básico</a></li>
+              <li><a href="Certificados/diploma-ruby-on-rails-2017.pdf" target="_blank" rel="noopener noreferrer">Curso de Ruby on Rails</a></li>
+              <li><a href="Certificados/diploma-marca-personal.pdf" target="_blank" rel="noopener noreferrer">Curso de Marca Personal</a></li>
+              <li><a href="Certificados/diploma-marketing-voz.pdf" target="_blank" rel="noopener noreferrer">Curso de Marketing Voz a Voz</a></li>
+              <li><a href="Certificados/diploma-photoshop-basico-2015.pdf" target="_blank" rel="noopener noreferrer">Curso Básico de Photoshop</a></li>
+              <li><a href="Certificados/diploma-ingles-basico-principiantes.pdf" target="_blank" rel="noopener noreferrer">Curso de Inglés Básico</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contacto">
+        <div class="section-head">
+          <p class="eyebrow">Hablemos</p>
+          <h2>Si tienes un proyecto, puedo ayudarte a llevarlo a producción con calidad.</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://www.linkedin.com/in/hectordamas/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Héctor Damas">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </span>
+              LinkedIn
+            </h3>
+            <p>Conectemos para oportunidades profesionales.</p>
+          </a>
+          <a class="contact-card" href="https://github.com/hectordamas" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Héctor Damas">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </span>
+              GitHub
+            </h3>
+            <p>Repositorios, actividad y proyectos en código.</p>
+          </a>
+          <a class="contact-card" href="https://wa.me/584241930033" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp de Héctor Damas">
+            <h3 class="title-with-icon">
+              <span class="icon-dot" aria-hidden="true">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              </span>
+              WhatsApp
+            </h3>
+            <p>Escríbeme directo al +58 424 193 0033.</p>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contact-form" aria-label="Formulario de contacto">
+          <h3>Formulario de contacto</h3>
+          <p>Completa los datos y te llevaré a WhatsApp con el mensaje listo para enviar.</p>
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Correo</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="form-field">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" autocomplete="tel" required />
+            </div>
+
+            <div class="form-field">
+              <label for="asunto">Asunto</label>
+              <input id="asunto" name="asunto" type="text" required />
+            </div>
+
+            <div class="form-field form-field-wide">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <h3>Héctor Damas</h3>
+          <p>Desarrollador web orientado a producto, experiencia y resultados.</p>
+        </div>
+        <nav class="footer-links" aria-label="Enlaces del footer">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#certificaciones">Certificaciones</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer-social" aria-label="Redes sociales">
+          <a href="https://www.linkedin.com/in/hectordamas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/hectordamas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="https://wa.me/584241930033" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">(c) <span id="current-year"></span> Héctor Damas. Todos los derechos reservados.</p>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/584241930033" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Héctor Damas">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
