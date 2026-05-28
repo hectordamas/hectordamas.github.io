@@ -71,10 +71,10 @@ a {
 
 .topbar {
   position: sticky;
-  top: 0;
+  top: calc(env(safe-area-inset-top, 0px) + 0.85rem);
   z-index: 1000;
   width: var(--container);
-  margin: 1rem auto 0;
+  margin: 1.15rem auto 0;
   padding: 0.7rem 1rem;
   display: flex;
   align-items: center;
@@ -176,6 +176,10 @@ a {
 
 .topbar nav a.is-current {
   color: var(--brand);
+}
+
+.mobile-menu-link {
+  display: none;
 }
 
 main {
@@ -938,7 +942,11 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: static;
+    position: sticky;
+    top: calc(env(safe-area-inset-top, 0px) + 1rem);
+    margin: 1rem auto 0;
+    width: calc(100% - 1rem);
+    padding: 0.75rem 0.85rem;
   }
 
   .menu-toggle {
@@ -967,12 +975,23 @@ h1 {
   }
 
   .topbar nav a {
-    padding: 0.55rem 0.5rem;
+    padding: 0.65rem 0.55rem;
     border-radius: 8px;
   }
 
   .topbar .btn {
-    width: 100%;
+    display: none;
+  }
+
+  .mobile-menu-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .mobile-menu-link i {
+    width: 1rem;
+    text-align: center;
   }
 
   .section {
