@@ -106,6 +106,50 @@ a {
   gap: 1rem;
 }
 
+.topbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex: 1;
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentcolor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .topbar nav a {
   text-decoration: none;
   font-weight: 500;
@@ -723,7 +767,8 @@ h1 {
 .chip:focus-visible,
 .btn:focus-visible,
 .contact-card:focus-visible,
-.topbar nav a:focus-visible {
+.topbar nav a:focus-visible,
+.menu-toggle:focus-visible {
   outline: 3px solid rgb(14 95 85 / 0.45);
   outline-offset: 2px;
 }
@@ -880,13 +925,43 @@ h1 {
   .topbar {
     border-radius: 14px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     position: static;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .topbar-menu {
+    width: 100%;
+    order: 3;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9rem;
+    padding-top: 0.5rem;
+  }
+
+  .menu-open .topbar-menu {
+    display: flex;
   }
 
   .topbar nav {
     width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .topbar nav a {
+    padding: 0.55rem 0.5rem;
+    border-radius: 8px;
+  }
+
+  .topbar .btn {
+    width: 100%;
   }
 
   .section {
